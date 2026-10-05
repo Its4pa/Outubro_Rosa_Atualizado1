@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outubro Rosa | Cuide de você</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <header class="topo">
+    <a href="#inicio" class="logo">Outubro Rosa</a>
+    <button id="botao-menu" class="botao-menu" aria-label="Abrir menu">☰</button>
+    <nav id="menu" class="menu">
+      <a href="#historia">História</a>
+      <a href="#cancer">Câncer de mama</a>
+      <a href="#prevencao">Prevenção</a>
+      <a href="#autoexame">Autoexame</a>
+      <a href="#ajudar">Como ajudar</a>
+      <a href="#relatos">Relatos</a>
+      <a href="#links">Saiba mais</a>
+    </nav>
+  </header>
+
+  <!-- INÍCIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <h1>Outubro Rosa: a informação salva vidas</h1>
+      <p>Um mês dedicado à prevenção e ao diagnóstico precoce do câncer de mama.</p>
+      <a href="#autoexame" class="botao">Aprenda o autoexame</a>
+    </div>
+    <div class="hero-imagem">
+      <img class="hero-foto" src="1.png"
+           alt="Cartaz do Outubro Rosa com uma senhora sorrindo ao lado de um grande laço rosa"
+           width="592" height="740">
+    </div>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section id="historia" class="secao">
+    <h2>A história do Outubro Rosa</h2>
+    <div class="linha-tempo">
+      <div class="marco"><strong>1985</strong><p>Nos Estados Unidos, outubro passa a ser o mês de conscientização sobre o câncer de mama.</p></div>
+      <div class="marco"><strong>1990</strong><p>Em Nova York acontece a primeira Corrida pela Cura, com participantes usando fitas rosa.</p></div>
+      <div class="marco"><strong>1992</strong><p>O laço rosa se populariza como símbolo da luta contra a doença.</p></div>
+      <div class="marco"><strong>2002</strong><p>No Brasil, o Obelisco do Ibirapuera, em São Paulo, é iluminado de rosa pela primeira vez.</p></div>
+      <div class="marco"><strong>Hoje</strong><p>Prédios, monumentos e campanhas de todo o país se vestem de rosa em outubro.</p></div>
+    </div>
+  </section>
+
+  <!-- CÂNCER DE MAMA -->
+  <section id="cancer" class="secao fundo-rosa">
+    <h2>O que é o câncer de mama?</h2>
+
+    <div class="cancer-topo">
+      <p class="intro">Acontece quando células da mama se multiplicam de forma desordenada. Quanto mais cedo é descoberto, maiores as chances de cura.</p>
+      <figure class="figura">
+        <img src="2.png" loading="lazy" width="600" height="415"
+             alt="Ilustração da anatomia da mama mostrando mamilo, ductos mamários, células de gordura e um tumor maligno">
+        <figcaption>Anatomia da mama e localização de um tumor maligno.</figcaption>
+      </figure>
+    </div>
+
+    <div class="cartoes">
+      <div class="cartao">
+        <h3>Sinais de alerta</h3>
+        <ul>
+          <li>Nódulo na mama ou na axila</li>
+          <li>Pele da mama com aspecto de casca de laranja</li>
+          <li>Mudança no formato ou no tamanho</li>
+          <li>Secreção saindo do mamilo</li>
+        </ul>
+      </div>
+      <div class="cartao">
+        <h3>Fatores de risco</h3>
+        <ul>
+          <li>Idade acima de 50 anos</li>
+          <li>Casos de câncer na família</li>
+          <li>Obesidade e sedentarismo</li>
+          <li>Consumo de álcool</li>
+        </ul>
+      </div>
+      <div class="cartao">
+        <h3>Importante</h3>
+        <p>Homens também podem ter câncer de mama, embora seja bem mais raro. Percebeu algo diferente? Procure um médico.</p>
+      </div>
+    </div>
+
+    <figure class="figura figura-sintomas">
+      <img src="3.png" loading="lazy" width="1047" height="1056"
+           alt="Infográfico com 8 sintomas que merecem atenção: secreção, mudança no formato ou tamanho, nódulo, irritação no mamilo, feridas na pele, dor na axila, dor na mama e alteração na cor ou textura da pele">
+      <figcaption>8 sintomas que merecem atenção. Percebeu algo? Procure um médico.</figcaption>
+    </figure>
+  </section>
+
+  <!-- PREVENÇÃO -->
+  <section id="prevencao" class="secao">
+    <h2>Como se prevenir</h2>
+    <p class="intro">Não existe prevenção total, mas bons hábitos reduzem o risco.</p>
+    <div class="cartoes">
+      <div class="cartao"><span class="icone">🥗</span><h3>Alimentação saudável</h3><p>Mais frutas, verduras e legumes. Menos ultraprocessados.</p></div>
+      <div class="cartao"><span class="icone">🏃‍♀️</span><h3>Exercício físico</h3><p>Pelo menos 150 minutos de atividade por semana.</p></div>
+      <div class="cartao"><span class="icone">🚭</span><h3>Evite álcool e cigarro</h3><p>Ambos aumentam o risco de vários tipos de câncer.</p></div>
+      <div class="cartao"><span class="icone">🩺</span><h3>Exames de rotina</h3><p>A mamografia é indicada, em geral, dos 50 aos 69 anos. Converse com seu médico.</p></div>
+    </div>
+  </section>
+
+  <!-- AUTOEXAME -->
+  <section id="autoexame" class="secao fundo-roxo">
+    <h2>Como fazer o autoexame</h2>
+    <p class="intro">Conhecer o próprio corpo ajuda a notar mudanças. Clique em cada passo.</p>
+    <div class="passos">
+      <div class="passo">
+        <button class="passo-titulo">1. Observe no espelho</button>
+        <div class="passo-texto"><p>Com os braços ao lado do corpo, olhe o formato, o tamanho e a cor da pele das mamas. Depois, levante os braços e observe de novo.</p></div>
+      </div>
+      <div class="passo">
+        <button class="passo-titulo">2. Apalpe em pé</button>
+        <div class="passo-texto"><p>Durante o banho, com a pele ensaboada, use as pontas dos dedos em movimentos circulares. Examine toda a mama e a axila.</p></div>
+      </div>
+      <div class="passo">
+        <button class="passo-titulo">3. Apalpe deitada</button>
+        <div class="passo-texto"><p>Deite-se com um braço atrás da cabeça e repita os movimentos circulares na mama do mesmo lado. Troque de lado.</p></div>
+      </div>
+      <div class="passo">
+        <button class="passo-titulo">4. Cheque o mamilo</button>
+        <div class="passo-texto"><p>Aperte levemente o mamilo e veja se sai algum líquido. Se houver secreção ou qualquer alteração, procure um médico.</p></div>
+      </div>
+    </div>
+    <p class="aviso">O autoexame não substitui a consulta médica nem a mamografia.</p>
+  </section>
+
+  <!-- COMO AJUDAR -->
+  <section id="ajudar" class="secao">
+    <h2>Como ajudar o próximo</h2>
+    <div class="cartoes">
+      <div class="cartao"><h3>Compartilhe informação</h3><p>Envie este site para amigas, mães e colegas.</p></div>
+      <div class="cartao"><h3>Incentive os exames</h3><p>Lembre quem você ama de marcar a consulta e a mamografia.</p></div>
+      <div class="cartao"><h3>Ofereça apoio</h3><p>Ouça sem julgar e acompanhe a pessoa em consultas e tratamentos.</p></div>
+      <div class="cartao"><h3>Seja voluntária(o)</h3><p>Hospitais e ONGs de apoio recebem ajuda e doações o ano todo.</p></div>
+    </div>
+  </section>
+
+  <!-- RELATOS -->
+  <section id="relatos" class="secao fundo-rosa">
+    <h2>Relatos que inspiram</h2>
+    <div class="relato-caixa">
+      <p id="relato-texto" class="relato-texto"></p>
+      <p id="relato-autor" class="relato-autor"></p>
+      <div class="relato-botoes">
+        <button id="relato-anterior" class="botao-pequeno">‹ Anterior</button>
+        <button id="relato-proximo" class="botao-pequeno">Próximo ›</button>
+      </div>
+    </div>
+    <p class="aviso">Relatos ilustrativos, inspirados em histórias comuns de pacientes e familiares.</p>
+  </section>
+
+  <!-- LINKS OFICIAIS -->
+  <section id="links" class="secao">
+    <h2>Quer saber mais?</h2>
+    <p class="intro">Consulte fontes confiáveis:</p>
+    <div class="cartoes">
+      <a class="cartao link" href="https://www.gov.br/inca" target="_blank" rel="noopener"><h3>INCA</h3><p>Instituto Nacional de Câncer</p></a>
+      <a class="cartao link" href="https://www.gov.br/saude" target="_blank" rel="noopener"><h3>Ministério da Saúde</h3><p>Informações e campanhas oficiais</p></a>
+      <a class="cartao link" href="https://www.femama.org.br" target="_blank" rel="noopener"><h3>Femama</h3><p>Federação de apoio ao câncer de mama</p></a>
+      <a class="cartao link" href="https://www.oncoguia.org.br" target="_blank" rel="noopener"><h3>Oncoguia</h3><p>Guia para pacientes com câncer</p></a>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <p>Outubro Rosa: faça o exame, cuide de você. 🎀</p>
+    <p class="pequeno">Este site é informativo e não substitui a orientação de um profissional de saúde.</p>
+  </footer>
+
+  <button id="botao-topo" class="botao-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+/* Cores do site */
+:root {
+  --rosa: #e91e8c;
+  --rosa-escuro: #c2186f;
+  --rosa-claro: #fff0f7;
+  --roxo: #6a1b9a;
+  --roxo-claro: #f3e5f5;
+  --texto: #3a2a3f;
+  --branco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: var(--branco);
+  line-height: 1.6;
+}
+
+/* Topo e menu */
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 6%;
+  background: var(--branco);
+  border-bottom: 3px solid var(--rosa);
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--rosa);
+  text-decoration: none;
+}
+
+.menu a {
+  margin-left: 18px;
+  color: var(--roxo);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu a:hover {
+  color: var(--rosa);
+}
+
+.botao-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+/* Início */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, var(--rosa-claro), var(--roxo-claro));
+}
+
+.hero-texto {
+  max-width: 520px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: var(--roxo);
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 24px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 26px;
+  background: var(--rosa);
+  color: var(--branco);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: var(--rosa-escuro);
+}
+
+/* Seções */
+.secao {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.secao h2 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  color: var(--roxo);
+  margin-bottom: 14px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.fundo-rosa {
+  background: var(--rosa-claro);
+}
+
+.fundo-roxo {
+  background: var(--roxo-claro);
+}
+
+/* Cartões */
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.cartao {
+  background: var(--branco);
+  padding: 24px;
+  border-radius: 10px;
+  border-top: 4px solid var(--rosa);
+  box-shadow: 0 2px 8px rgba(106, 27, 154, 0.12);
+}
+
+.cartao h3 {
+  color: var(--roxo);
+  margin-bottom: 8px;
+}
+
+.cartao ul {
+  padding-left: 18px;
+}
+
+.icone {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--texto);
+}
+
+.link:hover {
+  border-top-color: var(--roxo);
+}
+
+/* Linha do tempo */
+.linha-tempo {
+  max-width: 700px;
+  margin: 30px auto 0;
+  text-align: left;
+  border-left: 4px solid var(--rosa);
+  padding-left: 24px;
+}
+
+.marco {
+  margin-bottom: 24px;
+}
+
+.marco strong {
+  font-size: 1.3rem;
+  color: var(--rosa-escuro);
+}
+
+/* Autoexame (passos) */
+.passos {
+  max-width: 650px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.passo {
+  margin-bottom: 10px;
+}
+
+.passo-titulo {
+  width: 100%;
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--branco);
+  background: var(--roxo);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.passo-titulo:hover {
+  background: var(--rosa);
+}
+
+.passo-texto {
+  display: none;
+  padding: 14px 18px;
+  background: var(--branco);
+  border-radius: 0 0 8px 8px;
+}
+
+.passo.aberto .passo-texto {
+  display: block;
+}
+
+.aviso {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Relatos */
+.relato-caixa {
+  max-width: 650px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background: var(--branco);
+  border-radius: 10px;
+  border-left: 5px solid var(--roxo);
+}
+
+.relato-texto {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.relato-autor {
+  font-weight: bold;
+  color: var(--rosa-escuro);
+  margin-bottom: 18px;
+}
+
+.botao-pequeno {
+  padding: 8px 16px;
+  margin: 0 4px;
+  background: var(--rosa);
+  color: var(--branco);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.botao-pequeno:hover {
+  background: var(--roxo);
+}
+
+/* Rodapé */
+.rodape {
+  padding: 30px 8%;
+  text-align: center;
+  background: var(--roxo);
+  color: var(--branco);
+}
+
+.pequeno {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+/* Botão voltar ao topo */
+.botao-topo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+  color: var(--branco);
+  background: var(--rosa);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Celular */
+@media (max-width: 800px) {
+  .botao-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--branco);
+    padding: 10px 6%;
+    border-bottom: 3px solid var(--rosa);
+  }
+
+  .menu.aberto {
+    display: block;
+  }
+
+  .menu a {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 6%;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
+/* ===== IMAGENS ===== */
+.hero-foto {
+  width: min(360px, 100%);
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(194, 24, 111, 0.35);
+}
+
+.figura {
+  margin: 0;
+  background: #fff;
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(142, 36, 170, 0.15);
+  text-align: center;
+}
+
+.figura img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.figura figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #8e24aa;
+  font-weight: 600;
+}
+
+.cancer-topo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 32px;
+}
+
+.cancer-topo .intro {
+  margin: 0;
+  text-align: left;
+}
+
+.figura-sintomas {
+  max-width: 520px;
+  margin: 32px auto 0;
+}
+
+@media (max-width: 800px) {
+  .cancer-topo {
+    grid-template-columns: 1fr;
+  }
+  .cancer-topo .intro {
+    text-align: center;
+  }
+}
